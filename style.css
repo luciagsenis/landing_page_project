@@ -46,6 +46,7 @@ header > nav {
     display: flex;
     flex-grow: 1;
     gap: 3rem;
+    padding-left: 2rem;
 }
 
 li{
@@ -89,13 +90,64 @@ nav > ul > li > a{
     margin-right: 8px;
 }
 
+/* FIRST ELEMENT (NEW MERCEDES) */
+.car_presentation{
+    position: relative;
+    height: 500px; 
+    overflow: hidden;
+}
+
+.car_presentation > div > img{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+}
+
+.presentation_text{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 2; 
+    color: white;
+    text-align: left; 
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+.presentation_text :first-child{
+    font-family: var(--abhaya_font);
+    font-size: 4rem;
+}
+
+.presentation_text :last-child{
+    font-family: var(--abz_font);
+    font-size: 1rem;
+}
+
+@media (max-width: 500px) {
+    .presentation_text{
+        bottom: 0;
+    }
+    .presentation_text :last-child{
+        font-family: var(--abz_font);
+        font-size: 2rem;
+    }
+    .presentation_text :first-child{
+        font-family: var(--abhaya_font);
+        font-size: 3rem;
+    }
+}
+
+
+
+
+/* CONTACT */
 .contact_sect{
     background-color: #404243;
     padding: 1rem;
     display: flex;
-    color: white;
     justify-content: center;
-    font-family: var(--abz_font);
     height: 8rem;
     font-size: 1rem;
 }
@@ -111,6 +163,8 @@ nav > ul > li > a{
 .contact > p{
     text-align: left;
     width: 70%;
+    color: white;
+    font-family: var(--abz_font);
 }
 
 .contact > button{
@@ -124,3 +178,59 @@ nav > ul > li > a{
     border-color: black;
     background-color: white;
 }
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+.newsletter{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.email{
+    padding: 10px;
+    font-family: var(--abz_font);
+}
+
+.terms{
+    padding: 10px;
+    font-family: var(--abz_font);
+}
+
+.rrss{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.rrss > a{
+    text-decoration: none;
+}
+
+.rrss > a > img{
+    width: 15px;
+    height: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.newsletter > p{
+    font-family: var(--abz_font);
+    padding: 10px;
+    text-align: center;
+}
+
