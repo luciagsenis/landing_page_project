@@ -19,9 +19,9 @@
 
 header {
     display: flex;
-    padding: 20px;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .logo{
@@ -29,18 +29,16 @@ header {
     height: 50px;
 }
 
-header > nav{
+header > nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  
+    flex-grow: 1; 
+    justify-content: flex-start;
 }
 
 .nav_list{
     display: flex;
     flex-grow: 1;
-    justify-content: space-between;
+    gap: 3rem;
 }
 
 li{
@@ -51,6 +49,7 @@ nav > ul > li > a{
     text-decoration: none;
     color: black;
     font-family: var(--abz_font);
+    font-size: 1rem;
 }
 
 .burguer_menu {
@@ -73,5 +72,13 @@ nav > ul > li > a{
     height: 32px;
 }
 
+.right_menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
 
+.right_menu :last-child{
+    margin-right: 8px;
+}
 
