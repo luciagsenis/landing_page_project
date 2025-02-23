@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 :root{
     --abz_font: 'ABeeZee-Regular';
     --abhaya_font: 'AbhayaLibre';
@@ -82,3 +89,38 @@ nav > ul > li > a{
     margin-right: 8px;
 }
 
+.contact_sect{
+    background-color: #404243;
+    padding: 1rem;
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-family: var(--abz_font);
+    height: 8rem;
+    font-size: 1rem;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.contact > p{
+    text-align: left;
+    width: 70%;
+}
+
+.contact > button{
+    padding: 0.7rem;
+    font-family: var(--abz_font);
+    border-radius: 1.5rem;
+    width: 12.5rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+    background-color: white;
+}
