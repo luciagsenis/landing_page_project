@@ -263,7 +263,7 @@ nav > ul > li > a{
     width: 100%;
 }
 
-.card_propertie {
+.card_propertie_container {
     background-color: #D9D9D9;
     padding: 20px;
     border-radius: 10px;
@@ -275,17 +275,18 @@ nav > ul > li > a{
     color: black;
 }
 
-.card_propertie p{
+.card_propertie_container p{
     width: 100%;
     font-size: 30px;
     padding-bottom: 20px;
 }
 
-.card_propertie img {
+.card_propertie_container img {
     width: 100%;
     border-radius: 10px;
     padding-bottom: 20px;
 }
+
 
 /* CONTACT */
 .contact_sect{
