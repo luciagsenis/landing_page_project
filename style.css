@@ -224,6 +224,10 @@ nav > ul > li > a{
     font-family: var(--abhaya_font);
 }
 
+.map_discover_view{
+    position: relative;
+    text-align: left;
+}
 
 .map_discover_view img{
     width: 100%;
@@ -233,15 +237,20 @@ nav > ul > li > a{
 }
 
 .map_discover_info{
+    position: absolute;
     background-color: #A2A2A250;
     border-radius: 20px;
     padding: 20px;
+    width: 30%;
+    bottom: 80px;
+    left: 50px;
 }
 
 .map_discover_info p{
     font-family: var(--abz_font);
     font-size: 3rem;
     color: white;
+    padding-bottom: 20px;
 }
 
 .map_discover_btn{
@@ -288,13 +297,79 @@ nav > ul > li > a{
 }
 
 
+/* CAR RED SECTION */
+.car_red{
+    position: relative;
+    text-align: left;
+}
+
+.car_red img{
+   width: 100%;
+}
+
+.car_red_info{
+    width: 30%;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-family: var(--abz_font);
+    font-size: 1rem;
+}
+
+.car_red_info :first-child{
+    font-size: 3rem;
+}
+
+/* CAR RED PROGRAM */
+.car_red_program{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car_red_program_info{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 40px;
+    align-items: start;
+    width: 85%;
+}
+
+.car_red_program_info p{
+   font-family: var(--abz_font);
+   font-size: 1rem;
+}
+
+.car_red_program_info p:first-child{
+    font-size: 2.5rem;
+ }
+
+.car_red_program_info button{
+    font-family: var(--abz_font);
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 1.5rem;
+}
+
+.car_red_program img{
+      object-fit: contain;
+      padding: 30px;
+}
+
+.car_red_program_500{
+    display: none;
+}
+
 /* CONTACT */
 .contact_sect{
     background-color: #404243;
     padding: 1rem;
     display: flex;
     justify-content: center;
-    height: 8rem;
+    height: 100px;
     font-size: 1rem;
 }
 
@@ -303,7 +378,7 @@ nav > ul > li > a{
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 6rem;
+    gap: 100px;
 }
 
 .contact > p{
@@ -314,11 +389,11 @@ nav > ul > li > a{
 }
 
 .contact > button{
-    padding: 0.7rem;
+    padding: 10px;
     font-family: var(--abz_font);
-    border-radius: 1.5rem;
-    width: 12.5rem;
-    height: 3rem;
+    border-radius: 25px;
+    width: 40%;
+    height: 50px;
     font-size: 1rem;
     border-width: 1px;
     border-color: black;
@@ -394,4 +469,108 @@ form {
     .car_catalog{
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     }
+    .map_info p{
+        text-align: center;
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    .map_info :first-child{
+        font-size: 2rem;
+        width: 100%;
+    }
+   
+    .map_discover_view img{
+        height: 300px;
+    }
+
+    .map_discover_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%; 
+        height: 80%; 
+        top: 20px;
+        left: 20px; 
+        right: 20px; 
+        bottom: 20px;
+    }
+
+    .map_discover_info p {
+        font-size: 2rem;
+    }
+
+    .car_red {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        align-items: center;
+    }
+    .car_red_info {
+        background-color: #eeeeee;
+        position: static;
+        width: 100%;
+        color: black;
+        text-align: left;
+        font-size: 1rem;
+        padding: 20px;
+    }
+    .car_red_info :first-child{
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .car_red_program{
+        display: none;
+    }
+
+    .car_red_program_500 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .car_red_program_500 p{
+        font-family: var(--abz_font);
+        font-size: 1rem;
+    }
+
+    .car_red_program_500 :first-child{
+        font-size: 1.5rem;
+        width: 80%;
+        font-family: var(--abhaya_font);
+        text-align: center;
+    }
+
+    .car_red_program_500 img{
+        height: 40%;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .car_red_program_500 button{
+        font-family: var(--abz_font);
+        background-color: transparent;
+        border-color: transparent;
+        font-size: 1rem;
+        padding-top: 20px;
+    }
+
+    .contact_sect{
+       height: 200px;
+    }
+    
+   .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+   }
+   .contact p{
+        text-align: center;
+    }   
 }
