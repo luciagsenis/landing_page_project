@@ -392,15 +392,13 @@ nav > ul > li > a{
     padding: 10px;
     font-family: var(--abz_font);
     border-radius: 25px;
-    width: 40%;
+    width: 200px;
     height: 50px;
     font-size: 1rem;
     border-width: 1px;
     border-color: black;
     background-color: white;
 }
-
-
 
 
 /* FOOTER */
@@ -422,8 +420,28 @@ footer{
 }
 
 .terms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 10px;
     font-family: var(--abz_font);
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+.terms a{
+    color: white;
+}
+
+.terms input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    appearance: none; 
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 2px;
 }
 
 .rrss{
@@ -453,6 +471,70 @@ form {
     font-family: var(--abz_font);
     padding: 10px;
     text-align: center;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.email input[type="email"]{
+    background-color: transparent;
+    width: 300px;
+    padding-left: 20px;
+    margin-left: 50px;
+    border-radius: 25px;
+    border: 1px solid rgb(160, 160, 160);
+}
+
+.email button{
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    position: relative;
+    left: -50px;
+}
+
+.footer_sections{
+    display: flex;
+    font-family: var(--abz_font);
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.section{
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.section p{
+    padding-bottom: 10px;
+   
+}
+
+.section ul>li{
+    font-size: 12px;
+}
+
+.section ul>li>a{
+    text-decoration: none;
+    color: rgb(134, 135, 136);
+}
+
+.floating_button{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-color: transparent;
+    border-radius: 25px;
+}
+
+.floating_button img{
+    width: 25px;
+    height: 28px;   
 }
 
 /* RESPONSIVE */
@@ -573,4 +655,20 @@ form {
    .contact p{
         text-align: center;
     }   
+
+    .footer_sections{
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .section p{
+        text-align: center;
+    }
+
+    .section ul>li{
+        text-align: center;   
+     }
+
+  
 }
