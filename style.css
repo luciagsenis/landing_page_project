@@ -24,6 +24,10 @@
     --abhaya_font: 'AbhayaLibre';
 }
 
+a{
+    text-decoration: none;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -181,6 +185,11 @@ nav > ul > li > a{
     height: 40px;
     width: 100px;
     font-size: 1.5svh;
+    color: black;
+}
+
+.more_info_btn a{
+    color: black;
 }
 
 .colors {
@@ -261,6 +270,11 @@ nav > ul > li > a{
     height: 40px;
     width: 200px;
     font-size: 1.5svh;
+}
+
+.map_discover_btn a{
+    text-decoration: none;
+    color: black;
 }
 
 /* CAR PROPERTIES SCROLL */
@@ -352,6 +366,10 @@ nav > ul > li > a{
     background-color: transparent;
     border-color: transparent;
     font-size: 1.5rem;
+}
+
+.car_red_program_info a{
+   color: black;
 }
 
 .car_red_program img{
@@ -492,6 +510,7 @@ form {
     width: 120px;
     border-radius: 25px;
     position: relative;
+    border: 1px solid white;
     left: -50px;
 }
 
